@@ -5,7 +5,7 @@ function summarize(...numbers) {
     for (let index in integers) {
         sum += BigInt(integers[index]);
     }
-    if (sum > Number.MAX_SAFE_INTEGER || sum < Number.MIN_SAFE_INTEGER) {
+    if (sum > BigInt(Number.MAX_SAFE_INTEGER) || sum < BigInt(Number.MIN_SAFE_INTEGER)) {
         return sum;
     } else {
         return Number(sum);
