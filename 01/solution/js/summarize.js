@@ -1,10 +1,11 @@
 
-function summarize(... numbers) {
+function summarize(...numbers) {
+    let integers = numbers.filter(i => Number.isInteger(i));
     let sum = BigInt(0);
-    for (let index in numbers) {
-        sum += BigInt(Math.trunc(numbers[index]));
+    for (let index in integers) {
+        sum += BigInt(integers[index]);
     }
-    return sum;
+    return result;
 }
 
 export default summarize;
