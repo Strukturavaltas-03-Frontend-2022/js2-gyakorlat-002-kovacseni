@@ -9,4 +9,4 @@ function numericConverter(decimalNumber) {
 
 console.log(numericConverter(31));
 
-// export default numericConverter;
+export default numericConverter;

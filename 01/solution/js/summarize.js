@@ -2,7 +2,7 @@
 function summarize(... numbers) {
     let sum = BigInt(0);
     for (let index in numbers) {
-        sum += BigInt(numbers[index]);
+        sum += BigInt(Math.trunc(numbers[index]));
     }
     return sum;
 }
